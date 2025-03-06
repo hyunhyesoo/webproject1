@@ -4,8 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome HTML 5, CSS3, Javascript</h1>
+    <h1 class="hidden">Welcome HTML 5, CSS3, Javascript</h1>
+    <h1 class="hidden">Enjoy Coding!</h1>
+    <h1 class="hidden">Happy Learning!</h1>
+
+    <script>
+        const messages = document.querySelectorAll('h1');
+        const colors = ['#FF5733', '#33FF57', '#3357FF']; // 배경색 배열
+        let currentIndex = 0;
+
+        function showNextMessage() {
+            messages[currentIndex].classList.add('hidden');
+            currentIndex = (currentIndex + 1) % messages.length;
+            messages[currentIndex].classList.remove('hidden');
+            document.body.style.backgroundColor = colors[currentIndex]; // 배경색 변경
+        }
+
+        messages[currentIndex].classList.remove('hidden');
+        document.body.style.backgroundColor = colors[currentIndex]; // 초기 배경색 설정
+        setInterval(showNextMessage, 3000);
+    </script>
 </body>
 </html>
