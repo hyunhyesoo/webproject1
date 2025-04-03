@@ -25,6 +25,42 @@
                     <label for="female">여성</label>
                 </td>
             </tr>
+            <tr>
+                <td>
+                   관심분야:
+                </td>
+                <td>
+                    <select name="interest" multiple>
+                        <option value="animal">동물</option>
+                        <option value="music">음악</option>
+                        <option value="movie">영화</option>
+                        <option value="rest">휴식</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                   관심분야(항목 그룹화):
+                </td>
+                <td>
+                    <select name="interest">
+                        <optgroup label="동물">동물</optgroup>
+                            <option value="dog">개</option>
+                            <option value="cat">고양이</option>
+                            <option value="hamster">햄스터</option>
+                        <optgroup label="음악">음악</optgroup>
+                            <option value="pop">팝</option>
+                            <option value="rock">락</option>
+                            <option value="classic">클래식</option>
+                        <optgroup label="영화">영화</optgroup>
+                            <option value="horror">호러</option>
+                            <option value="romance">로맨스</option>
+                            <option value="comedy">코미디</option>
+                        <optgroup label="휴식">휴식</optgroup>
+                            <option value="sleep">수면</option>
+                    </select>
+                </td>
+            </tr>
             <tr align="center">
                 <td colspan="2"></td>
                 <button type="submit">가입</button>
