@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>구조 선택자에서 실수할 수 있는 부분</title>
+    <style>
+        li:first-child > a{
+            color: red;
+        }
+        /* li > a:first-child 이렇게 쓰지 않도록 주의의 */
+    </style>
+</head>
+<body>
+    <ul>
+        <li>***<a href="#">주의사항1</a></li>
+        <li>***<a href="#">주의사항2</a></li>
+        <li>***<a href="#">주의사항3</a></li>
+        <li>***<a href="#">주의사항4</a></li>
+        <li>***<a href="#">주의사항5</a></li>
+    </ul>
+</body>
+</html>
