@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>글자 크기와 글꼴 지정</title>
+    <style>
+        .font_big{
+            font-size: 3em;
+        }
+        .font_italic{
+            font-style: italic;
+        }
+        .font_bold{
+            font-weight: bold;
+        }
+        .font_center{
+            text-align: center;
+        }
+        .font_right{
+            text-align: right;
+        }
+        .button{
+            width: 150px;
+            height: 70px;
+            background-color: #ffa200;
+            border: 10px solid #ffffff;
+            border-radius: 30px;
+            box-shadow: 5px 5px 5px #c2c0c0a7;
+        }
+        .button > a{
+            display: block;
+            line-height: 70px;
+            /* 수직정렬하고싶으면 .button의 높이와 동일하게 맞춰주면 됨*/
+        }
+    </style>
+</head>
+<body>
+    <p class="font_big font_italic font_bold font_center">Lorem ipsum dolor sit amet</p>
+    <p class="font_bold font_right">2025.04.17</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste cum modi facere doloribus.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+    </p>
+
+    <div class="button">
+        <a href="#" class="font_big font_italic font_bold font_center">click</a>
+        <!-- a는 inline이라 font_center 적용 안됨, div에 넣어줘야함
+         a에 그대로 넣어서 쓰고 싶으면 style에 .button > a 해서 inline -> block으로 바꿔줘야함-->
+    </div>
+</body>
+</html>
