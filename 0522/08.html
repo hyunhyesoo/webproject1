@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        let product = {
-            제품명: "초코송이",
-            가격: 2000,
-            수량: 10,
-            제조사: "오리온"
+        let person = {
+            name: "김폴리",
+            age: 20,
+            eat: function(food) {
+                alert(this.name + "이(가) " + food + "을(를) 먹습니다.");
+            } //같은 객체 안에 있는 메서드는 this 사용
         }
+        person.eat("떡볶이");
     </script>
 </head>
 <body>
