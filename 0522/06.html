@@ -5,11 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        function q() {
-            alert("Hello");
-            alert("JavaScript");
+        function callTenTimes(callback) {
+            for(let i = 0; i < 10; i++) {
+                callback();
+            }
         }
-        alert(typeof (fun1) + "1" + fun1);
+        // let fun = function() {
+        //     alert("Hello");
+        // }
+        callTenTimes(function() {
+            alert("Hello");
+        }); //할당하지 않고 바로 호출할 수 있음
     </script>
 </head>
 <body>
