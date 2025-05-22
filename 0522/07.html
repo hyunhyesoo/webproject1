@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let product = {
+            제품명: "초코송이",
+            가격: 2000,
+            수량: 10,
+            제조사: "오리온"
+        }
+        for(let field in product) {
+            alert(field + ": " + product[field]);
+            // alert(field + ": " + product.field); 이렇게도 쓸 수 있지만 
+            // field가 문자열이기 때문에 product.field로는 접근할 수 없음
+            // alert(product.field); 이렇게 쓰면 undefined가 나옴
+        } 
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
