@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let img;
+        function changeImg() {
+            img = document.getElementById("img1");
+            img.src = "imgs/donut1.png";
+            img.width = 600;
+        }
+        function resetImg() {
+            img.src = "";
+            img.width = 0;
+        }
+        function selectedChangeImg() {
+            let select = document.querySelector("select");
+            img = document.getElementById("img1");
+            let index = select.selectedIndex;
+            img.src = select.options[index].value;
+            img.width = 600;
+        }
+        function yummy() {
+            //사용자 정의 속성을 body요소 객체에 설정
+            document.body.setAttribute("data-yummy", "먹자!");
+            alert(document.body.getAttribute("data-yummy"));
+        }
+    </script>
+</head>
+<body>
+    <hr>
+    <button onclick="changeImg()">냠냠</button>
+    <button onclick="resetImg()">리셋</button>
+    <button onclick="yummy()">먹자!</button>
+    <br>
+    <select onchange="selectedChangeImg()">
+        <option value="">select an image</option>
+        <option value="imgs/donut1.png">냠</option>
+        <option value="imgs/donut2.png">냠냠</option>
+        <option value="imgs/donut3.png">냠냠냠</option>
+    </select>
+    <hr>
+    <img id="img1">
+</body>
+</html>
