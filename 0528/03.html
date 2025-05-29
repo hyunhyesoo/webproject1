@@ -27,9 +27,21 @@
             document.body.setAttribute("data-yummy", "먹자!");
             alert(document.body.getAttribute("data-yummy"));
         }
+        let time;
+        function nowTime() {
+            let now = new Date();
+            time = document.querySelector("h1");
+            time.innerHTML = now.toString();
+        }
+        function callTime() {
+            time = document.querySelector("h1");
+            nowTime();
+            // setInterval() 함수를 사용하기 전에 현재 시간을 한 번 출력
+            setInterval(nowTime, 1000);
+        }
     </script>
 </head>
-<body>
+<body onload="callTime()">
     <hr>
     <button onclick="changeImg()">냠냠</button>
     <button onclick="resetImg()">리셋</button>
@@ -43,5 +55,8 @@
     </select>
     <hr>
     <img id="img1">
+    <hr>
+    <h1></h1>
+    <hr>
 </body>
 </html>
