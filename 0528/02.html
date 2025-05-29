@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function changeGradation() {
+            let output = "";
+            for (let i = 0; i < 256; i++) {
+                output += "<div></div>";
+            }
+            document.getElementById("gradation").innerHTML = output;
+
+            let divs = document.querySelectorAll("div");
+            for(let i = 1; i < divs.length; i++) {
+                divs[i].style.height = "2px";
+                divs[i].style.backgroundColor = "rgb(" + (i - 1) +", " + (i - 1) + ", " + (i - 1) + ")";
+            }
+        }
+        function reset() {
+            document.getElementById("gradation").innerHTML = "";   
+        }
+    </script>
+    <style>
+        #buttons {
+            position: absolute;
+        }
+        </style>
+</head>
+<body>
+    <hr>
+    <div id="buttons">
+        <button onclick="changeGradation()"> 그라데이션 </button>
+        <button onclick="reset()"> 리셋 </button>
+    </div>
+    <div id="gradation"></div>
+    
+</body>
+</html>
