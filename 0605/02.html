@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function increamentStar(btn) {
+            // btn.textContent = btn.textContent + "☆";
+            btn.textContent += "☆";
+        }
+        function removeDefault() {
+            // event.preventDefault();
+            return false; // 링크의 기본 동작을 막음
+            }
+    </script>
+</head>
+<body>
+    <a href="../0528/03.html" onclick="return removeDefault">자바스크립트 연습</a>
+    //return false;를 사용할거면 onclick="return removeDefault()"로 사용해야함
+    // 그냥 onclick="return false"를 사용해도 됨
+    // event.preventDefault()를 사용할거면 onclick="removeDefault()"로 사용해야함
+    <br><br>
+    <button onclick="increamentStar(this)">별 생성</button>
+</body>
+</html>
