@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>시각효과</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(
+            function () {
+                $("#btn1").click(
+                    function () {
+                        $("#content1").fadeOut('slow');
+                    }
+                );
+            }
+        );
+    </script>
+</head>
+
+<body>
+    <button id="btn1">Visual Effect</button>
+    <br>
+    <!-- fadeIn()을 사용하려면 div요소에 display:none으로 css를 적용해야 효과를 확인할 수 있다. -->
+    <div id="content1">
+        <h1>hello hello</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam ratione iusto repudiandae ut quisquam
+            blanditiis doloremque nisi tempora repellat sunt quos impedit, alias exercitationem in nulla non omnis?
+            Temporibus, soluta?
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus voluptatem quasi, dolorum tenetur
+            mollitia laboriosam deserunt asperiores repellat error iste assumenda reiciendis officia ullam ratione
+            dolore et labore! Rerum, porro!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam ea nobis incidunt, impedit voluptas porro
+            deserunt eum doloremque, asperiores aperiam, doloribus nulla corporis earum molestias repudiandae
+            consequatur soluta debitis. Assumenda!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quam minima debitis eveniet perferendis, animi
+            est veritatis eum voluptates dolorem reprehenderit quaerat cum ullam, rem reiciendis odio ipsam unde
+            maiores?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ipsa, dolorem necessitatibus saepe ad
+            laborum? Laborum praesentium sed recusandae, id, ducimus ex, sapiente possimus fugit rem fuga aut cupiditate
+            perferendis.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga, sunt quo ullam eos tempora laudantium
+            dolorem optio magnam eius consequatur, asperiores quisquam doloremque voluptatum. Nihil mollitia cumque
+            obcaecati numquam consequuntur?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, ad temporibus! Assumenda, sit
+            consequuntur aliquam tempore perspiciatis minus quod quia officiis ad sunt odio molestiae fuga a nihil ipsa
+            reprehenderit!
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid veniam laboriosam neque, asperiores quas
+            excepturi porro provident quos, itaque rem vitae numquam ab adipisci maxime explicabo. Nisi harum sequi
+            magnam!
+        </p>
+    </div>
+</body>
+
+</html>
