@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(
+            function() {
+                let text = $("h1").text();
+                let html = $("h1").html();
+
+                alert("text: " + text);
+                alert("html: " + html);
+            }
+        );
+    </script>
+</head>
+<body>
+    <h1>와플은 맛있어</h1>
+    <h1>생크림사과잼와플</h1>
+</body>
+</html>
